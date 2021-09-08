@@ -1,0 +1,27 @@
+PODS:
+  - JKNoticationHelper_Swift (0.1.1)
+  - Nimble (8.0.9)
+  - Quick (2.2.1)
+
+DEPENDENCIES:
+  - JKNoticationHelper_Swift (from `../../`)
+  - Nimble (~> 8.0.7)
+  - Quick (~> 2.2.0)
+
+SPEC REPOS:
+  trunk:
+    - Nimble
+    - Quick
+
+EXTERNAL SOURCES:
+  JKNoticationHelper_Swift:
+    :path: "../../"
+
+SPEC CHECKSUMS:
+  JKNoticationHelper_Swift: 8a6567af02fa7df15c865b880ccda9f90559f2e1
+  Nimble: 98b888285a615fd34f20e61753cf58ea1402bde4
+  Quick: f5754d69b7013f5864c29aab9ae6f0c79c5bc200
+
+PODFILE CHECKSUM: 5b29d1f14ea72906ccb0860cdfd5813b8589b641
+
+COCOAPODS: 1.10.1

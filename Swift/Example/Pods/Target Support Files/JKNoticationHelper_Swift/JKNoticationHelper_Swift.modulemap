@@ -1,0 +1,6 @@
+framework module JKNoticationHelper_Swift {
+  umbrella header "JKNoticationHelper_Swift-umbrella.h"
+
+  export *
+  module * { export * }
+}
