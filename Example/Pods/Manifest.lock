@@ -7,7 +7,7 @@ DEPENDENCIES:
   - Kiwi
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  https://github.com/CocoaPods/Specs.git:
     - Kiwi
 
 EXTERNAL SOURCES:
@@ -15,9 +15,9 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  JKNoticationHelper: aeca82f173c8dd32c8b3b938730a91bcbf5bf22b
+  JKNoticationHelper: b86c13482058be37744fe8fdb9dadf2e50dc8615
   Kiwi: fbeafef0f00e4d8f7dcb3420a4930afe70af77f7
 
 PODFILE CHECKSUM: 5f37b67a792c14bb1dcb001fc4216633f0e61172
 
-COCOAPODS: 1.7.5
+COCOAPODS: 1.10.1

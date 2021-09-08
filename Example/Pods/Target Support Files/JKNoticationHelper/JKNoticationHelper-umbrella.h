@@ -10,6 +10,9 @@
 #endif
 #endif
 
+#import "JKFastNotificationProxy.h"
+#import "JKNoticationHelper.h"
+#import "NSObject+JKNoticationHelper.h"
 
 FOUNDATION_EXPORT double JKNoticationHelperVersionNumber;
 FOUNDATION_EXPORT const unsigned char JKNoticationHelperVersionString[];
