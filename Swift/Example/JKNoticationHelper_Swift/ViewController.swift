@@ -18,14 +18,14 @@ class ViewController: UIViewController,JKFastNotificationProtocol {
         self.view.addSubview(button)
         button.center = self.view.center
         button.addTarget(self, action: #selector(buttonClicked), for:UIControlEvents.touchUpInside)
-        self .jk_observe(name: "aaaaa") { notification in
+        jk_observeNotificaion(name: "aaaaa") { notification in
             print("hahah")
         }
     }
     
     
     @objc func buttonClicked() ->Void {
-       self .jk_postNotification(notificationName: "aaaaa")
+       jk_postNotification(notificationName: "aaaaa")
     }
 
     override func didReceiveMemoryWarning() {

@@ -13,17 +13,17 @@ public protocol JKFastNotificationProtocol {
     /// - Parameters:
     ///   - name: 通知的名字
     ///   - block: 处理通知的回调
-    func jk_observe(name:String, block:@escaping ((_ notification:Notification) -> Void)) ->Void
+    func jk_observeNotificaion(name:String, block:@escaping ((_ notification:Notification) -> Void)) ->Void
     
     /// 添加一组通知的监听
     /// - Parameters:
     ///   - names: 通知的名字组成的数组
     ///   - block: 处理通知的回调
-    func jk_observe(names:Array<String>,block:@escaping ((_ notification:Notification) -> Void)) ->Void
+    func jk_observeNotificaions(names:Array<String>,block:@escaping ((_ notification:Notification) -> Void)) ->Void
     
     /// 移除通知的监听
     /// - Parameter name: 通知的名字
-    func jk_removeObserve(for name:String) ->Void
+    func jk_removeObserveNotification(name:String) ->Void
     
     /// 发送通知
     /// - Parameter notificationName: 通知名字
@@ -39,17 +39,17 @@ public protocol JKFastNotificationProtocol {
 }
 
 public extension JKFastNotificationProtocol {
-    func jk_observe(name:String, block:@escaping ((_ notification:Notification) -> Void)) ->Void {
-        jk_observe(names: [name], block: block)
+    func jk_observeNotificaion(name:String, block:@escaping ((_ notification:Notification) -> Void)) ->Void {
+        jk_observeNotificaions(names: [name], block: block)
     }
     
-    func jk_observe(names:Array<String>,block:@escaping ((_ notification:Notification) -> Void)) ->Void {
+    func jk_observeNotificaions(names:Array<String>,block:@escaping ((_ notification:Notification) -> Void)) ->Void {
         for name in names {
             NotificationCenter.default.addObserver(forName: Notification.Name.init(name), object: nil, queue: nil, using: block)
         }
     }
     
-    func jk_removeObserve(for name:String) ->Void {
+    func jk_removeObserveNotification(name:String) ->Void {
         NotificationCenter.default.removeObserver(self, name: Notification.Name.init(name), object: nil)
     }
     
