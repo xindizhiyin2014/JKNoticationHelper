@@ -13,7 +13,19 @@ class ViewController: UIViewController,JKFastNotificationProtocol {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        
+        let button:UIButton = UIButton.init(frame: CGRect.init(x: 0, y: 0, width: 60, height: 60))
+        button.backgroundColor = .red
+        self.view.addSubview(button)
+        button.center = self.view.center
+        button.addTarget(self, action: #selector(buttonClicked), for:UIControlEvents.touchUpInside)
+        self .jk_observe(name: "aaaaa") { notification in
+            print("hahah")
+        }
+    }
+    
+    
+    @objc func buttonClicked() ->Void {
+       self .jk_postNotification(notificationName: "aaaaa")
     }
 
     override func didReceiveMemoryWarning() {
