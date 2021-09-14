@@ -23,34 +23,47 @@ public protocol JKFastNotificationProtocol {
     
     /// 移除通知的监听
     /// - Parameter name: 通知的名字
-    func jk_removeObserveNotification(name:String) ->Void
+    func jk_removeObserveNotification(for name:String) ->Void
     
     /// 发送通知
     /// - Parameter notificationName: 通知名字
     func jk_postNotification(notificationName:String) ->Void
-
+    
     /// 发送通知
     /// - Parameters:
     ///   - notificationName: 通知名字
     ///   - object: 发送的对象
     ///   - userInfo: 用户信息
     func jk_postNotification(notificationName:String, object:Any?, userInfo:[AnyHashable : Any]?) ->Void
+    
+    
+    var notificationProxyList: [JKFastNotificationProxy] {get set}
+}
 
+private struct JKFastNotificationProtocolAssociatedKey {
+    static var identifier: String = "notificationProxyList_identifier"
 }
 
 public extension JKFastNotificationProtocol {
-    func jk_observeNotificaion(name:String, block:@escaping ((_ notification:Notification) -> Void)) ->Void {
+    
+    var notificationProxyList: [JKFastNotificationProxy] {
+        get{ objc_getAssociatedObject(self, &JKFastNotificationProtocolAssociatedKey.identifier) as? [JKFastNotificationProxy] ?? [] }
+        set { objc_setAssociatedObject(self, &JKFastNotificationProtocolAssociatedKey.identifier, newValue, .OBJC_ASSOCIATION_RETAIN_NONATOMIC) }
+    }
+    
+     func jk_observeNotificaion(name:String, block:@escaping ((_ notification:Notification) -> Void)) ->Void {
         jk_observeNotificaions(names: [name], block: block)
     }
     
-    func jk_observeNotificaions(names:Array<String>,block:@escaping ((_ notification:Notification) -> Void)) ->Void {
-        for name in names {
-            NotificationCenter.default.addObserver(forName: Notification.Name.init(name), object: nil, queue: nil, using: block)
-        }
+     func jk_observeNotificaions(names:Array<String>,block:@escaping ((_ notification:Notification) -> Void)) ->Void {
+        var tmpSelf = self
+        let proxyArr = names.map { JKFastNotificationProxy(name: $0, block: block)}
+        tmpSelf.notificationProxyList += proxyArr
     }
     
-    func jk_removeObserveNotification(name:String) ->Void {
-        NotificationCenter.default.removeObserver(self, name: Notification.Name.init(name), object: nil)
+     func jk_removeObserveNotification(for name:String) ->Void {
+        var tmpSelf = self
+        tmpSelf.notificationProxyList.removeAll { $0.notificationName == name}
     }
     
     func jk_postNotification(notificationName:String) ->Void {
@@ -61,3 +74,4 @@ public extension JKFastNotificationProtocol {
         NotificationCenter.default.post(name: Notification.Name.init(notificationName), object: object, userInfo: userInfo)
     }
 }
+

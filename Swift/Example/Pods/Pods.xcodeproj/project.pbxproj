@@ -8,78 +8,72 @@
 
 /* Begin PBXBuildFile section */
 		0E7BB409E61EC1523471EB18A1D40256 /* Pods-JKNoticationHelper_Swift_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EB5184A037E6C50A6054089582DAE68B /* Pods-JKNoticationHelper_Swift_Example-dummy.m */; };
-		2512B8E3B61144355E592E7CDC96C1C4 /* JKNoticationHelper_Swift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F5786605C4CDB1D114C9BA340BC0C3E1 /* JKNoticationHelper_Swift-dummy.m */; };
-		3816FA044885B6E5F147277396D6D500 /* JKFastNotificationProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38CEA497723B8188C0CD6C3582B85211 /* JKFastNotificationProtocol.swift */; };
 		4FEB8D10FF1EE0555CC1EB8B85498E8E /* Pods-JKNoticationHelper_Swift_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 83AFB466B31C70E30738D234F81F9A27 /* Pods-JKNoticationHelper_Swift_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		673E2A21A70EF4761043C5E1F91A3E8A /* Pods-JKNoticationHelper_Swift_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AAD5B850C1E472BB95273C74CAA84864 /* Pods-JKNoticationHelper_Swift_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		74C43921E9CCB99D2F2A21879E187EE7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		836853E584839341E9CA811EBEE8187E /* JKFastNotificationProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100E69CA9D13CB53F5857C746D59D903 /* JKFastNotificationProxy.swift */; };
+		8641967231EAEF63A05DCD39860886FC /* JKNoticationHelper_Swift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6919F7382E77864F308FE44724E5D1CA /* JKNoticationHelper_Swift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B63BD8FCA2B10F09DB4D844018ECBC3E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		BED1F67DE8E1BF67B761D58F8E610145 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		CA21D7CEBD79BC97F0A063AA1EA7C4D1 /* Pods-JKNoticationHelper_Swift_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E3A92FD7278EBE8EBC170E9C461FE4CF /* Pods-JKNoticationHelper_Swift_Tests-dummy.m */; };
-		F697C7717BE7B615974755357A86BBA9 /* JKNoticationHelper_Swift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 26E7E6E60CC8CF9279B701D034255112 /* JKNoticationHelper_Swift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE4F23B6D9B7A2E73B98B36821D8BE31 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		DE2DB00B0F31CCE2F335BB7CAA51DF53 /* JKFastNotificationProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA8E266D323244B40124C2E89B9EF19B /* JKFastNotificationProtocol.swift */; };
+		EA53AD6C2284514F3C453C4CE3D50D08 /* JKNoticationHelper_Swift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F671047E8547F684948352F82BD564D /* JKNoticationHelper_Swift-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		20B587289E1E4051EB12710DB05129AE /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 72FA02D9FD5797C36B3667763B64CD86;
-			remoteInfo = "Pods-JKNoticationHelper_Swift_Example";
-		};
-		C24EF9A038A2A37F1DFA5123656E0436 /* PBXContainerItemProxy */ = {
+		628BFCA8F4AA52870E73B61E82484E29 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 7C81807CEAAD7E969134FB966CA77D92;
 			remoteInfo = JKNoticationHelper_Swift;
 		};
+		8FD13BF062C0460A22A21933B107D248 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 72FA02D9FD5797C36B3667763B64CD86;
+			remoteInfo = "Pods-JKNoticationHelper_Swift_Example";
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		00E588255DC59206BDDDFC390F5760A6 /* Pods-JKNoticationHelper_Swift_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JKNoticationHelper_Swift_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		08533E5F11EA1B414A5715A7B8CEB8BE /* JKNoticationHelper_Swift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JKNoticationHelper_Swift-prefix.pch"; sourceTree = "<group>"; };
+		0F671047E8547F684948352F82BD564D /* JKNoticationHelper_Swift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "JKNoticationHelper_Swift-dummy.m"; sourceTree = "<group>"; };
+		100E69CA9D13CB53F5857C746D59D903 /* JKFastNotificationProxy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JKFastNotificationProxy.swift; path = Swift/JKNoticationHelper_Swift/Classes/JKFastNotificationProxy.swift; sourceTree = "<group>"; };
 		13EB3542EEDF506531A4EC7C72F0666F /* Pods-JKNoticationHelper_Swift_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-JKNoticationHelper_Swift_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		140D819CD4AB0A4B72A40C2B6B7D1893 /* Pods-JKNoticationHelper_Swift_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-JKNoticationHelper_Swift_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		1D856DDB09B934ABA3E1476AE8D69520 /* JKNoticationHelper_Swift.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = JKNoticationHelper_Swift.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		26E7E6E60CC8CF9279B701D034255112 /* JKNoticationHelper_Swift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JKNoticationHelper_Swift-umbrella.h"; sourceTree = "<group>"; };
-		27A6DCF15B9409D38F973192ABA6D5BF /* JKNoticationHelper_Swift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JKNoticationHelper_Swift-prefix.pch"; sourceTree = "<group>"; };
-		38CEA497723B8188C0CD6C3582B85211 /* JKFastNotificationProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JKFastNotificationProtocol.swift; path = Swift/JKNoticationHelper_Swift/Classes/JKFastNotificationProtocol.swift; sourceTree = "<group>"; };
+		2FB01FDE6BC88A1C8C1B8BA35A170EC3 /* JKNoticationHelper_Swift.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = JKNoticationHelper_Swift.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		49B72B91D7650C80729B3E63F7CD528D /* Pods-JKNoticationHelper_Swift_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-JKNoticationHelper_Swift_Example.modulemap"; sourceTree = "<group>"; };
+		5CFD7F873BCBC01A6E21FF717C6629B8 /* JKNoticationHelper_Swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JKNoticationHelper_Swift.release.xcconfig; sourceTree = "<group>"; };
 		6454C79DB9ABA48AE8F133443AA6AD92 /* Pods-JKNoticationHelper_Swift_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-JKNoticationHelper_Swift_Tests.modulemap"; sourceTree = "<group>"; };
+		648E2F22514E0A59B7A513EC26567D2D /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		6919F7382E77864F308FE44724E5D1CA /* JKNoticationHelper_Swift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JKNoticationHelper_Swift-umbrella.h"; sourceTree = "<group>"; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		7594BEDB95B5D52071F1BEF2B1002B88 /* Pods-JKNoticationHelper_Swift_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-JKNoticationHelper_Swift_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		7843D970A7039DF4EAA598E413FFAB07 /* JKNoticationHelper_Swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JKNoticationHelper_Swift.debug.xcconfig; sourceTree = "<group>"; };
 		79C555C0AE249CB47CFD55BE986DA046 /* Pods_JKNoticationHelper_Swift_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_JKNoticationHelper_Swift_Tests.framework; path = "Pods-JKNoticationHelper_Swift_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A537E3ABD3BADCF3874C3CC36D04052 /* Pods-JKNoticationHelper_Swift_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JKNoticationHelper_Swift_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		83AFB466B31C70E30738D234F81F9A27 /* Pods-JKNoticationHelper_Swift_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-JKNoticationHelper_Swift_Example-umbrella.h"; sourceTree = "<group>"; };
 		86112DA106DE93654BE3285E5974C85C /* Pods_JKNoticationHelper_Swift_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_JKNoticationHelper_Swift_Example.framework; path = "Pods-JKNoticationHelper_Swift_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		86F18FCCC11287FDF676BC051130890C /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		8CF704163D0BC893740B6B8EB0DD6EF7 /* JKNoticationHelper_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = JKNoticationHelper_Swift.framework; path = JKNoticationHelper_Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9736856D10CB9D2CC44AC7EC7B81A9A4 /* JKNoticationHelper_Swift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = JKNoticationHelper_Swift.modulemap; sourceTree = "<group>"; };
 		976451CF82C1455AE6C1CC68C62390D9 /* Pods-JKNoticationHelper_Swift_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-JKNoticationHelper_Swift_Example-frameworks.sh"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9F7BB1899D70A01576F18E96EE2C41AF /* Pods-JKNoticationHelper_Swift_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-JKNoticationHelper_Swift_Tests-Info.plist"; sourceTree = "<group>"; };
-		A9C45A4EA5FA4E06B6F1350C1EE114E9 /* JKNoticationHelper_Swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JKNoticationHelper_Swift.release.xcconfig; sourceTree = "<group>"; };
+		AA8E266D323244B40124C2E89B9EF19B /* JKFastNotificationProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JKFastNotificationProtocol.swift; path = Swift/JKNoticationHelper_Swift/Classes/JKFastNotificationProtocol.swift; sourceTree = "<group>"; };
 		AAD5B850C1E472BB95273C74CAA84864 /* Pods-JKNoticationHelper_Swift_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-JKNoticationHelper_Swift_Tests-umbrella.h"; sourceTree = "<group>"; };
 		CC2D1AA90CB2BF5349BB83AB5E0C0078 /* Pods-JKNoticationHelper_Swift_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JKNoticationHelper_Swift_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		CCF8E0B7C3FD7DC1A7B65E49F57D82BC /* Pods-JKNoticationHelper_Swift_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JKNoticationHelper_Swift_Example.release.xcconfig"; sourceTree = "<group>"; };
 		D96C5A567038787024EC8B0B44903209 /* Pods-JKNoticationHelper_Swift_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-JKNoticationHelper_Swift_Example-Info.plist"; sourceTree = "<group>"; };
-		E0D34670E56F8882FD69AADBA376A671 /* JKNoticationHelper_Swift-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "JKNoticationHelper_Swift-Info.plist"; sourceTree = "<group>"; };
+		E34B009672A37C42D9D974ECD63492E4 /* JKNoticationHelper_Swift-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "JKNoticationHelper_Swift-Info.plist"; sourceTree = "<group>"; };
 		E3A92FD7278EBE8EBC170E9C461FE4CF /* Pods-JKNoticationHelper_Swift_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-JKNoticationHelper_Swift_Tests-dummy.m"; sourceTree = "<group>"; };
+		E595C54B1F32F97C108F168F07FA90BE /* JKNoticationHelper_Swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JKNoticationHelper_Swift.debug.xcconfig; sourceTree = "<group>"; };
 		EB5184A037E6C50A6054089582DAE68B /* Pods-JKNoticationHelper_Swift_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-JKNoticationHelper_Swift_Example-dummy.m"; sourceTree = "<group>"; };
 		ED939D9754F147F0228428ACE95D2961 /* Pods-JKNoticationHelper_Swift_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-JKNoticationHelper_Swift_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		F5786605C4CDB1D114C9BA340BC0C3E1 /* JKNoticationHelper_Swift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "JKNoticationHelper_Swift-dummy.m"; sourceTree = "<group>"; };
+		F695F272BC1AFABD57046405A01B93D7 /* JKNoticationHelper_Swift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = JKNoticationHelper_Swift.modulemap; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		18A03A182BD0535891A9AECB09C7BE8D /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				BED1F67DE8E1BF67B761D58F8E610145 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		5F7D663BEC614A77BBB94A372055D972 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -93,6 +87,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				74C43921E9CCB99D2F2A21879E187EE7 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4C1A43A45BBB689DFFB984F236CEB66 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE4F23B6D9B7A2E73B98B36821D8BE31 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -115,21 +117,20 @@
 			path = "Target Support Files/Pods-JKNoticationHelper_Swift_Tests";
 			sourceTree = "<group>";
 		};
+		1C35972BEBF03117F84C1704EE702173 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F4355DE8F5392108D9635106E01BE0F5 /* JKNoticationHelper_Swift */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
 		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
 			isa = PBXGroup;
 			children = (
 				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
 			);
 			name = iOS;
-			sourceTree = "<group>";
-		};
-		5E9266F9A50C03132E75079984F99BAB /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				1D856DDB09B934ABA3E1476AE8D69520 /* JKNoticationHelper_Swift.podspec */,
-				86F18FCCC11287FDF676BC051130890C /* LICENSE */,
-			);
-			name = Pod;
 			sourceTree = "<group>";
 		};
 		622E45602D77B06DD907BE73891CDCCA /* Targets Support Files */ = {
@@ -141,38 +142,28 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		717F580A2500EF1B97C6A612ACD837AF /* Support Files */ = {
+		80288C89354A3BC5AD653A82A4247E39 /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				9736856D10CB9D2CC44AC7EC7B81A9A4 /* JKNoticationHelper_Swift.modulemap */,
-				F5786605C4CDB1D114C9BA340BC0C3E1 /* JKNoticationHelper_Swift-dummy.m */,
-				E0D34670E56F8882FD69AADBA376A671 /* JKNoticationHelper_Swift-Info.plist */,
-				27A6DCF15B9409D38F973192ABA6D5BF /* JKNoticationHelper_Swift-prefix.pch */,
-				26E7E6E60CC8CF9279B701D034255112 /* JKNoticationHelper_Swift-umbrella.h */,
-				7843D970A7039DF4EAA598E413FFAB07 /* JKNoticationHelper_Swift.debug.xcconfig */,
-				A9C45A4EA5FA4E06B6F1350C1EE114E9 /* JKNoticationHelper_Swift.release.xcconfig */,
+				2FB01FDE6BC88A1C8C1B8BA35A170EC3 /* JKNoticationHelper_Swift.podspec */,
+				648E2F22514E0A59B7A513EC26567D2D /* LICENSE */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		BD01D26737FE5DACE26957633B9479C3 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F695F272BC1AFABD57046405A01B93D7 /* JKNoticationHelper_Swift.modulemap */,
+				0F671047E8547F684948352F82BD564D /* JKNoticationHelper_Swift-dummy.m */,
+				E34B009672A37C42D9D974ECD63492E4 /* JKNoticationHelper_Swift-Info.plist */,
+				08533E5F11EA1B414A5715A7B8CEB8BE /* JKNoticationHelper_Swift-prefix.pch */,
+				6919F7382E77864F308FE44724E5D1CA /* JKNoticationHelper_Swift-umbrella.h */,
+				E595C54B1F32F97C108F168F07FA90BE /* JKNoticationHelper_Swift.debug.xcconfig */,
+				5CFD7F873BCBC01A6E21FF717C6629B8 /* JKNoticationHelper_Swift.release.xcconfig */,
 			);
 			name = "Support Files";
 			path = "Swift/Example/Pods/Target Support Files/JKNoticationHelper_Swift";
-			sourceTree = "<group>";
-		};
-		AD197B389F15BDAE3578B33E1FEEB9D3 /* JKNoticationHelper_Swift */ = {
-			isa = PBXGroup;
-			children = (
-				38CEA497723B8188C0CD6C3582B85211 /* JKFastNotificationProtocol.swift */,
-				5E9266F9A50C03132E75079984F99BAB /* Pod */,
-				717F580A2500EF1B97C6A612ACD837AF /* Support Files */,
-			);
-			name = JKNoticationHelper_Swift;
-			path = ../../..;
-			sourceTree = "<group>";
-		};
-		BE9E0F489EC85A85351FA1106B032A84 /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				AD197B389F15BDAE3578B33E1FEEB9D3 /* JKNoticationHelper_Swift */,
-			);
-			name = "Development Pods";
 			sourceTree = "<group>";
 		};
 		CCCD049FF20300706BE7DDA5408D2370 /* Products */ = {
@@ -189,7 +180,7 @@
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				BE9E0F489EC85A85351FA1106B032A84 /* Development Pods */,
+				1C35972BEBF03117F84C1704EE702173 /* Development Pods */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
 				CCCD049FF20300706BE7DDA5408D2370 /* Products */,
 				622E45602D77B06DD907BE73891CDCCA /* Targets Support Files */,
@@ -221,6 +212,18 @@
 			path = "Target Support Files/Pods-JKNoticationHelper_Swift_Example";
 			sourceTree = "<group>";
 		};
+		F4355DE8F5392108D9635106E01BE0F5 /* JKNoticationHelper_Swift */ = {
+			isa = PBXGroup;
+			children = (
+				AA8E266D323244B40124C2E89B9EF19B /* JKFastNotificationProtocol.swift */,
+				100E69CA9D13CB53F5857C746D59D903 /* JKFastNotificationProxy.swift */,
+				80288C89354A3BC5AD653A82A4247E39 /* Pod */,
+				BD01D26737FE5DACE26957633B9479C3 /* Support Files */,
+			);
+			name = JKNoticationHelper_Swift;
+			path = ../../..;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -240,11 +243,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F5EAFFF2BAF2BABB43281A478E1F4303 /* Headers */ = {
+		C5BBC62A26E562E23E42A351321D4661 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F697C7717BE7B615974755357A86BBA9 /* JKNoticationHelper_Swift-umbrella.h in Headers */,
+				8641967231EAEF63A05DCD39860886FC /* JKNoticationHelper_Swift-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,7 +266,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				D17C315EFE5C66AA1AB253F3C4C12CC8 /* PBXTargetDependency */,
+				5DDE1338767AB139EDF3C5AF27ED092F /* PBXTargetDependency */,
 			);
 			name = "Pods-JKNoticationHelper_Swift_Example";
 			productName = "Pods-JKNoticationHelper_Swift_Example";
@@ -272,12 +275,12 @@
 		};
 		7C81807CEAAD7E969134FB966CA77D92 /* JKNoticationHelper_Swift */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 19B2D44261B4830AD539D51C5EDC3073 /* Build configuration list for PBXNativeTarget "JKNoticationHelper_Swift" */;
+			buildConfigurationList = E366AAD95A7A20CF90F6BEE98CAD05CE /* Build configuration list for PBXNativeTarget "JKNoticationHelper_Swift" */;
 			buildPhases = (
-				F5EAFFF2BAF2BABB43281A478E1F4303 /* Headers */,
-				66B320BB14EAA8B1E028BBCD9C118175 /* Sources */,
-				18A03A182BD0535891A9AECB09C7BE8D /* Frameworks */,
-				D615BAC7A173DA23291A30FF192703D7 /* Resources */,
+				C5BBC62A26E562E23E42A351321D4661 /* Headers */,
+				643336C975F67D4119A4F3227ED2052B /* Sources */,
+				A4C1A43A45BBB689DFFB984F236CEB66 /* Frameworks */,
+				C12C973985BC9A779A7BDD912E3B07AD /* Resources */,
 			);
 			buildRules = (
 			);
@@ -300,7 +303,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				73066D4555EC69EC8F141EDC8967436B /* PBXTargetDependency */,
+				CCBED6CFA5E700A911F17ADCA802A064 /* PBXTargetDependency */,
 			);
 			name = "Pods-JKNoticationHelper_Swift_Tests";
 			productName = "Pods-JKNoticationHelper_Swift_Tests";
@@ -351,7 +354,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D615BAC7A173DA23291A30FF192703D7 /* Resources */ = {
+		C12C973985BC9A779A7BDD912E3B07AD /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -369,12 +372,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		66B320BB14EAA8B1E028BBCD9C118175 /* Sources */ = {
+		643336C975F67D4119A4F3227ED2052B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3816FA044885B6E5F147277396D6D500 /* JKFastNotificationProtocol.swift in Sources */,
-				2512B8E3B61144355E592E7CDC96C1C4 /* JKNoticationHelper_Swift-dummy.m in Sources */,
+				DE2DB00B0F31CCE2F335BB7CAA51DF53 /* JKFastNotificationProtocol.swift in Sources */,
+				836853E584839341E9CA811EBEE8187E /* JKFastNotificationProxy.swift in Sources */,
+				EA53AD6C2284514F3C453C4CE3D50D08 /* JKNoticationHelper_Swift-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -389,17 +393,17 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		73066D4555EC69EC8F141EDC8967436B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Pods-JKNoticationHelper_Swift_Example";
-			target = 72FA02D9FD5797C36B3667763B64CD86 /* Pods-JKNoticationHelper_Swift_Example */;
-			targetProxy = 20B587289E1E4051EB12710DB05129AE /* PBXContainerItemProxy */;
-		};
-		D17C315EFE5C66AA1AB253F3C4C12CC8 /* PBXTargetDependency */ = {
+		5DDE1338767AB139EDF3C5AF27ED092F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = JKNoticationHelper_Swift;
 			target = 7C81807CEAAD7E969134FB966CA77D92 /* JKNoticationHelper_Swift */;
-			targetProxy = C24EF9A038A2A37F1DFA5123656E0436 /* PBXContainerItemProxy */;
+			targetProxy = 628BFCA8F4AA52870E73B61E82484E29 /* PBXContainerItemProxy */;
+		};
+		CCBED6CFA5E700A911F17ADCA802A064 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-JKNoticationHelper_Swift_Example";
+			target = 72FA02D9FD5797C36B3667763B64CD86 /* Pods-JKNoticationHelper_Swift_Example */;
+			targetProxy = 8FD13BF062C0460A22A21933B107D248 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -470,9 +474,9 @@
 			};
 			name = Debug;
 		};
-		3D8787F6B401B5CA9010B38E251BFDC6 /* Debug */ = {
+		28115B58EBE5CB35236F96EA31D4EFFB /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7843D970A7039DF4EAA598E413FFAB07 /* JKNoticationHelper_Swift.debug.xcconfig */;
+			baseConfigurationReference = E595C54B1F32F97C108F168F07FA90BE /* JKNoticationHelper_Swift.debug.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -532,37 +536,6 @@
 			};
 			name = Debug;
 		};
-		710B32A4DDAC97A8CE610EE088845F24 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = A9C45A4EA5FA4E06B6F1350C1EE114E9 /* JKNoticationHelper_Swift.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/JKNoticationHelper_Swift/JKNoticationHelper_Swift-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/JKNoticationHelper_Swift/JKNoticationHelper_Swift-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/JKNoticationHelper_Swift/JKNoticationHelper_Swift.modulemap";
-				PRODUCT_MODULE_NAME = JKNoticationHelper_Swift;
-				PRODUCT_NAME = JKNoticationHelper_Swift;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 		7CB27F800A50B20D14910BF18BDD3225 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = CC2D1AA90CB2BF5349BB83AB5E0C0078 /* Pods-JKNoticationHelper_Swift_Example.debug.xcconfig */;
@@ -594,6 +567,37 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
+		};
+		8993F04FD0FBC966FEFBBDFA74E534CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5CFD7F873BCBC01A6E21FF717C6629B8 /* JKNoticationHelper_Swift.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/JKNoticationHelper_Swift/JKNoticationHelper_Swift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/JKNoticationHelper_Swift/JKNoticationHelper_Swift-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/JKNoticationHelper_Swift/JKNoticationHelper_Swift.modulemap";
+				PRODUCT_MODULE_NAME = JKNoticationHelper_Swift;
+				PRODUCT_NAME = JKNoticationHelper_Swift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
 		};
 		96C4AF4AE6F34685430D4EB29FCFE929 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -726,15 +730,6 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		19B2D44261B4830AD539D51C5EDC3073 /* Build configuration list for PBXNativeTarget "JKNoticationHelper_Swift" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				3D8787F6B401B5CA9010B38E251BFDC6 /* Debug */,
-				710B32A4DDAC97A8CE610EE088845F24 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -749,6 +744,15 @@
 			buildConfigurations = (
 				53377DB893DADE12421421A6F5E1F41E /* Debug */,
 				C593B5D6C709FAA5D3DD0688F59AA822 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E366AAD95A7A20CF90F6BEE98CAD05CE /* Build configuration list for PBXNativeTarget "JKNoticationHelper_Swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				28115B58EBE5CB35236F96EA31D4EFFB /* Debug */,
+				8993F04FD0FBC966FEFBBDFA74E534CB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

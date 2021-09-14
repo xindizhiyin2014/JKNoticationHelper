@@ -9,7 +9,7 @@
 import UIKit
 import JKNoticationHelper_Swift
 class ViewController: UIViewController,JKFastNotificationProtocol {
-    
+        
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -17,7 +17,7 @@ class ViewController: UIViewController,JKFastNotificationProtocol {
         button.backgroundColor = .red
         self.view.addSubview(button)
         button.center = self.view.center
-        button.addTarget(self, action: #selector(buttonClicked), for:UIControlEvents.touchUpInside)
+        button.addTarget(self, action: #selector(buttonClicked), for:.touchUpInside)
         jk_observeNotificaion(name: "aaaaa") { notification in
             print("hahah")
         }
@@ -26,6 +26,8 @@ class ViewController: UIViewController,JKFastNotificationProtocol {
     
     @objc func buttonClicked() ->Void {
        jk_postNotification(notificationName: "aaaaa")
+        let vc:BViewController = BViewController()
+        present(vc, animated: true, completion: nil)
     }
 
     override func didReceiveMemoryWarning() {
