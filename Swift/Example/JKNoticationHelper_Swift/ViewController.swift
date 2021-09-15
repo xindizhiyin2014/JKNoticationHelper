@@ -9,7 +9,6 @@
 import UIKit
 import JKNoticationHelper_Swift
 class ViewController: UIViewController,JKFastNotificationProtocol {
-        
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -21,10 +20,13 @@ class ViewController: UIViewController,JKFastNotificationProtocol {
         jk_observeNotificaion(name: "aaaaa") { notification in
             print("hahah")
         }
+        
     }
     
     
     @objc func buttonClicked() ->Void {
+        let person = Person()
+        
        jk_postNotification(notificationName: "aaaaa")
         let vc:BViewController = BViewController()
         present(vc, animated: true, completion: nil)
