@@ -57,7 +57,21 @@ public extension JKFastNotificationProtocol {
     
      func jk_observeNotificaions(names:Array<String>,block:@escaping ((_ notification:Notification) -> Void)) ->Void {
         var tmpSelf = self
-        let proxyArr = names.map { JKFastNotificationProxy(name: $0, block: block)}
+        
+        let proxyArr:[JKFastNotificationProxy] = names.compactMap {
+            let name:String = $0
+            let observered:Bool = tmpSelf.notificationProxyList.contains { proxy in
+                return proxy.notificationName == name
+            }
+            if observered == false {
+               return JKFastNotificationProxy(name: name, block: block)
+            } else {
+                #if DEBUG
+                assert(false, "duplicated add observer of the same name!")
+                #endif
+                return nil
+            }
+        }
         tmpSelf.notificationProxyList += proxyArr
     }
     
