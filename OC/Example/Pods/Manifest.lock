@@ -1,5 +1,5 @@
 PODS:
-  - JKNoticationHelper (0.1.0)
+  - JKNoticationHelper (0.1.2)
   - Kiwi (3.0.0)
 
 DEPENDENCIES:
@@ -15,7 +15,7 @@ EXTERNAL SOURCES:
     :path: "../../"
 
 SPEC CHECKSUMS:
-  JKNoticationHelper: 489d7154b7eaf655072959bd2ff3851d02ea89ac
+  JKNoticationHelper: 567b724e0edb871b673ad678ed96ddd56e0cc2a5
   Kiwi: fbeafef0f00e4d8f7dcb3420a4930afe70af77f7
 
 PODFILE CHECKSUM: 3d35b9766c2ff982fd95b136d6e22f0266272de1

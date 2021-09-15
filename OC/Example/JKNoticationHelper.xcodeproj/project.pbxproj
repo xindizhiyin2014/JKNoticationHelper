@@ -24,6 +24,7 @@
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
+		BDE513B426F248F0000BBCB3 /* JKNoticationHelper.podspec in Resources */ = {isa = PBXBuildFile; fileRef = BDE513B326F248F0000BBCB3 /* JKNoticationHelper.podspec */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,8 +40,6 @@
 /* Begin PBXFileReference section */
 		1722197F50BA85A8420B1815 /* Pods_JKNoticationHelper_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JKNoticationHelper_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		20C21746A2F99EE3A0651BAA /* Pods-JKNoticationHelper_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JKNoticationHelper_Tests.release.xcconfig"; path = "Target Support Files/Pods-JKNoticationHelper_Tests/Pods-JKNoticationHelper_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		248D9DD2703A87BB7222CF0A /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		2FD4DF5C9DDE303C97532BFF /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* JKNoticationHelper_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JKNoticationHelper_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -65,7 +64,7 @@
 		83D52CC558EAC0F3D8364E79 /* Pods-JKNoticationHelper_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JKNoticationHelper_Example.release.xcconfig"; path = "Target Support Files/Pods-JKNoticationHelper_Example/Pods-JKNoticationHelper_Example.release.xcconfig"; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AAB060F4046C7816DF66DCE1 /* Pods-JKNoticationHelper_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JKNoticationHelper_Example.debug.xcconfig"; path = "Target Support Files/Pods-JKNoticationHelper_Example/Pods-JKNoticationHelper_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		C15ECEF29514604099ADFBC4 /* JKNoticationHelper.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = JKNoticationHelper.podspec; path = ../JKNoticationHelper.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		BDE513B326F248F0000BBCB3 /* JKNoticationHelper.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = JKNoticationHelper.podspec; path = ../../JKNoticationHelper.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		F52240BF87260F1D28D0AC77 /* Pods-JKNoticationHelper_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JKNoticationHelper_Tests.debug.xcconfig"; path = "Target Support Files/Pods-JKNoticationHelper_Tests/Pods-JKNoticationHelper_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -178,9 +177,7 @@
 		60FF7A9C1954A5C5007DD14C /* Podspec Metadata */ = {
 			isa = PBXGroup;
 			children = (
-				C15ECEF29514604099ADFBC4 /* JKNoticationHelper.podspec */,
-				2FD4DF5C9DDE303C97532BFF /* README.md */,
-				248D9DD2703A87BB7222CF0A /* LICENSE */,
+				BDE513B326F248F0000BBCB3 /* JKNoticationHelper.podspec */,
 			);
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
@@ -282,6 +279,7 @@
 				71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
+				BDE513B426F248F0000BBCB3 /* JKNoticationHelper.podspec in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

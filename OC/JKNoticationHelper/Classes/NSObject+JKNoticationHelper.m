@@ -25,10 +25,36 @@ static const void *kProxyList = &kProxyList;
     return list;
 }
 
-- (void)observeNotificationForName:(NSString *)name usingBlock:(JKFastNotificationBlock)block
+- (void)jk_observeNotificationForName:(NSString *)name
+                           usingBlock:(void(^)(NSNotification *notification))block
 {
-    JKFastNotificationProxy *proxy = [[JKFastNotificationProxy alloc] initWithName:name block:block];
-    [[self notificationProxyList] addObject:proxy];
+    if (name) {
+        [self jk_observeNotificationForNames:@[name] usingBlock:block];
+    } else {
+#if DEBUG
+        NSAssert(NO, @"name can't be nil");
+#endif
+    }
+    
+}
+
+- (void)jk_observeNotificationForNames:(NSArray<NSString *> *)names
+                            usingBlock:(void(^)(NSNotification *notification))block
+{
+    for (NSString *name in names) {
+        JKFastNotificationProxy *proxy = [[JKFastNotificationProxy alloc] initWithName:name block:block];
+        [[self notificationProxyList] addObject:proxy];
+    }
+}
+
+- (void)jk_postNotification:(NSString *)name
+{
+    [self jk_postNotification:name object:nil userInfo:nil];
+}
+
+- (void)jk_postNotification:(NSString *)name object:(id)object userInfo:(NSDictionary *)userInfo
+{
+    [[NSNotificationCenter defaultCenter] postNotificationName:name object:object userInfo:userInfo];
 }
 
 - (void)removeNotification:(NSString *)name

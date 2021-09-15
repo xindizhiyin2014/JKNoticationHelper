@@ -1,6 +1,6 @@
 {
   "name": "JKNoticationHelper",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "summary": "this is notification to help develop to use NSNotification easily.",
   "description": "this is notification to help develop to use NSNotification easily.it will update with the need",
   "homepage": "https://github.com/xindizhiyin2014/JKNoticationHelper",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/xindizhiyin2014/JKNoticationHelper.git",
-    "tag": "0.1.0"
+    "tag": "0.1.2"
   },
   "platforms": {
     "ios": "8.0"
