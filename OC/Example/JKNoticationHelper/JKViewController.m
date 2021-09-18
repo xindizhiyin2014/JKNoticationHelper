@@ -19,7 +19,7 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
-    [self observeNotificationForName:@"aaaa" usingBlock:^(NSNotification *notification) {
+    [self jk_observeNotificationAtModule:@"ooo" forName:@"aaaa" usingBlock:^(NSNotification * _Nonnull notification) {
         NSLog(@"jkjkjk");
     }];
     
@@ -33,7 +33,7 @@
 
 - (void)buttonClicked:(UIButton *)button
 {
-    [[NSNotificationCenter defaultCenter]postNotificationName:@"aaaa" object:nil];
+    [self jk_postNotificationAtModule:@"ooo" notificationName:@"aaaa"];
 }
 
 

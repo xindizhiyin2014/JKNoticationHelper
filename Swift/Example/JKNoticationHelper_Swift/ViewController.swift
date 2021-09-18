@@ -17,9 +17,10 @@ class ViewController: UIViewController,JKFastNotificationProtocol {
         self.view.addSubview(button)
         button.center = self.view.center
         button.addTarget(self, action: #selector(buttonClicked), for:.touchUpInside)
-        jk_observeNotificaion(name: "aaaaa") { notification in
+        jk_observeNotification(at: self, notificationName: "aaaaa") { notification in
             print("hahah")
         }
+        
         
     }
     
@@ -27,7 +28,7 @@ class ViewController: UIViewController,JKFastNotificationProtocol {
     @objc func buttonClicked() ->Void {
         let person = Person()
         
-       jk_postNotification(notificationName: "aaaaa")
+       jk_postNotification(at: self, notificationName: "aaaaa")
         let vc:BViewController = BViewController()
         present(vc, animated: true, completion: nil)
     }
