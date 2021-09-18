@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'JKNoticationHelper'
-  s.version          = '0.1.2'
+  s.version          = '0.1.3'
   s.summary          = 'this is notification to help develop to use NSNotification easily.'
 
 # This description is used to generate tags and improve search results.
