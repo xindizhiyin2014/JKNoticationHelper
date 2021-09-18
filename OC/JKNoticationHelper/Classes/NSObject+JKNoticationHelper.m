@@ -35,7 +35,6 @@ static const void *kProxyList = &kProxyList;
         NSAssert(NO, @"name can't be nil");
 #endif
     }
-    
 }
 
 - (void)jk_observeNotificationForNames:(NSArray<NSString *> *)names
@@ -43,7 +42,78 @@ static const void *kProxyList = &kProxyList;
 {
     for (NSString *name in names) {
         JKFastNotificationProxy *proxy = [[JKFastNotificationProxy alloc] initWithName:name block:block];
-        [[self notificationProxyList] addObject:proxy];
+        NSArray *notificationProxyList = [self notificationProxyList];
+        BOOL isContained = NO;
+        for (JKFastNotificationProxy *tempProxy in notificationProxyList) {
+            if ([tempProxy.notificationName isEqualToString:proxy.notificationName]) {
+#if DEBUG
+                NSAssert(NO, @"duplicated add observer of the same name!");
+#endif
+                isContained = YES;
+                break;
+            }
+        }
+        if (!isContained) {
+            [[self notificationProxyList] addObject:proxy];
+        }
+    }
+}
+
+- (void)jk_observeNotificationAtModule:(NSString *)moduleName
+                               forName:(NSString *)name
+                            usingBlock:(void(^)(NSNotification *notification))block
+{
+    if (name) {
+        [self jk_observeNotificationAtModule:moduleName forNames:@[name] usingBlock:block];
+    } else {
+#if DEBUG
+        NSAssert(NO, @"name can't be nil");
+#endif
+    }
+}
+
+- (void)jk_observeNotificationAtModule:(NSString *)moduleName
+                              forNames:(NSArray<NSString *> *)names
+                            usingBlock:(void(^)(NSNotification *notification))block
+{
+    if (moduleName && names) {
+        for (NSString *notificationName in names) {
+            NSString *name = [NSString stringWithFormat:@"%@##$$&&%@",moduleName,notificationName];
+            [self jk_observeNotificationForName:name usingBlock:block];
+        }
+    } else {
+#if DEBUG
+        NSAssert(NO, @"moduleName and names can't be nil");
+#endif
+    }
+}
+
+- (void)jk_observeNotificationAtModuleInstance:(__kindof NSObject *)moduleInstance
+                                       forName:(NSString *)name
+                                    usingBlock:(void(^)(NSNotification *notification))block
+{
+    if (name) {
+        [self jk_observeNotificationAtModuleInstance:moduleInstance forNames:@[name] usingBlock:block];
+    } else {
+#if DEBUG
+        NSAssert(NO, @"name can't be nil");
+#endif
+    }
+}
+
+- (void)jk_observeNotificationAtModuleInstance:(__kindof NSObject *)moduleInstance
+                                      forNames:(NSArray<NSString *> *)names
+                                    usingBlock:(void(^)(NSNotification *notification))block
+{
+    if (moduleInstance && names) {
+        for (NSString *notificationName in names) {
+            NSString *name = [NSString stringWithFormat:@"%p##$$&&%@",moduleInstance,notificationName];
+            [self jk_observeNotificationForName:name usingBlock:block];
+        }
+    } else {
+#if DEBUG
+        NSAssert(NO, @"moduleInstance and names can't be nil");
+#endif
     }
 }
 
@@ -56,6 +126,51 @@ static const void *kProxyList = &kProxyList;
 {
     [[NSNotificationCenter defaultCenter] postNotificationName:name object:object userInfo:userInfo];
 }
+
+- (void)jk_postNotificationAtModule:(NSString *)moduleName
+                   notificationName:(NSString *)notificationName
+{
+    [self jk_postNotificationAtModule:moduleName notificationName:notificationName object:nil userInfo:nil];
+}
+
+- (void)jk_postNotificationAtModule:(NSString *)moduleName
+                   notificationName:(NSString *)notificationName
+                             object:(nullable id)object
+                           userInfo:(nullable NSDictionary *)userInfo
+{
+    if (moduleName
+        && notificationName) {
+        NSString *name = [NSString stringWithFormat:@"%@##$$&&%@",moduleName,notificationName];
+        [self jk_postNotification:name object:object userInfo:userInfo];
+    } else {
+#if DEBUG
+        NSAssert(NO, @"moduleName and notificationName can't be nil!");
+#endif
+    }
+}
+
+- (void)jk_postNotificationAtModuleInstance:(__kindof NSObject *)moduleInstance
+                           notificationName:(NSString *)notificationName
+{
+    [self jk_postNotificationAtModuleInstance:moduleInstance notificationName:notificationName object:nil userInfo:nil];
+}
+
+- (void)jk_postNotificationAtModuleInstance:(__kindof NSObject *)moduleInstance
+                           notificationName:(NSString *)notificationName
+                                     object:(nullable id)object
+                                   userInfo:(nullable NSDictionary *)userInfo
+{
+    if (moduleInstance
+        && notificationName) {
+        NSString *name = [NSString stringWithFormat:@"%p##$$&&%@",moduleInstance,notificationName];
+        [self jk_postNotification:name object:object userInfo:userInfo];
+    } else {
+#if DEBUG
+        NSAssert(NO, @"moduleInstance and notificationName can't be nil!");
+#endif
+    }
+}
+
 
 - (void)removeNotification:(NSString *)name
 {
